@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title></title>
+  </head>
+  <body>
+    <div class="box" id="heading">
+      <h1>
+      <%= kindiofDay %></h1>
+
+    </div>
+    <div class="box">
+      <% for (var i =0; i <=newlistitem.length;  i++ ) { %>
+<div class="item">
+  <input type="checkbox">
+  <p><%= newlistitem[i] %></p>
+
+</div>
+
+  <%#  will output the numbers 1-10 %>
+  <% } %>
+
+  <form class="items" action="/" method="post">
+    <input type="text" name="newItem" placeholder="New Item" >
+    <button type="submit" name="button">+</button>
+  </form>
+
+
+    </div>
+
+  </body>
+</html>
