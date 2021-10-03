@@ -15,7 +15,7 @@ app.get("/",function(req,res){
   };
   var day = today.toLocalDateString("en-US",options);
    res.render("list",{
-     kindofDay: day
+     kindiofDay: day
    });
 
 
